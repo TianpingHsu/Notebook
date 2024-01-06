@@ -1,0 +1,48 @@
+* Android
+
+** adb
+- mine
+adb connect 172.25.12.210
+adb -s 172.25.12.210 shell admin
+
+- wh
+adb connect 172.25.19.97
+adb -s 172.25.19.97 shell admin
+
+adb connect 172.25.27.9
+
+adb connect 172.25.21.28
+
+
+** tcpdump:
+cd /data/ptlib/cap
+
+tcpdump -i eth0 host 172.25.13.133 -w wh.cap
+adb -s 172.25.19.97 pull /data/ptlib/cap/wh.cap .
+
+
+tcpdump host 172.25.13.133 -w my.cap
+adb -s 172.25.12.210 pull /data/ptlib/cap/my.cap .
+
+
+** log
+rm -rf /sdcard/Android/data/com.quanneng.qumeetingterminal/cache/log/* /data/ptlib/cap/*.cap
+adb -s 172.25.19.97 pull /sdcard/Android/datacom.quanneng.qumeetingtermina/cache/log/siph323 ./wh.log
+adb -s 172.25.12.210 pull /sdcard/Android/data/com.quanneng.hdd4h/cache/log/siph323 ./my.log
+adb -s 172.25.27.9 pull /sdcard/Android/data/com.quanneng.hdd4h/cache/log/siph323 ./my.log
+
+
+** shell
+
+adb -s 172.25.19.97 shell
+adb -s 172.25.12.210 shell
+
+
+** port is occupied
+netstat -ano | findstr "5037"
+taskkill -f -pid 
+
+
+* dos cmd
+- start .  :: open current directory in file explorer
+

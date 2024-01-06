@@ -2,6 +2,19 @@
 
 # evergreenhuaizhi@gmail.com
 [ChatGPT (openai.com)](https://chat.openai.com/)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NDg0ODMzM119
--->
+
+## luogu
+https://www.luogu.com.cn/  
+ethan_hsu  
+15967179048  
+
+
+## leetcode
+https://leetcode.cn/  
+15967179048  
+
+
+
+## links
+* https://open.kattis.com/  
+
